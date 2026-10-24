@@ -1,0 +1,17 @@
+{
+  "id": "c29",
+  "slug": "video-downloader",
+  "name": "全网视频下载器",
+  "version": "0.1.0",
+  "repo": "campfire-code/video-downloader",
+  "license": "MIT",
+  "ui": {
+    "layout": "a",
+    "palette": "rose"
+  },
+  "upstream": {
+    "repo": "yt-dlp/yt-dlp",
+    "license": "Unlicense"
+  },
+  "ffmpeg": true
+}

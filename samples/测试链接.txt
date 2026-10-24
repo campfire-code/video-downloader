@@ -1,0 +1,3 @@
+# 示例链接（占位，不指向真实视频）。批量模式下每行一个。
+https://example.com/video/demo-001
+https://example.com/video/demo-002

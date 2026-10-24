@@ -1,0 +1,94 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "主窗口权限：读写用户选择的文件、保存设置、联网下载 yt-dlp 官方发布文件、打开文件夹与链接；运行随应用打包的 ffmpeg，以及只能执行应用数据目录 yt-dlp 文件夹内两个固定路径的 yt-dlp",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "opener:allow-open-path",
+    "opener:allow-reveal-item-in-dir",
+    {
+      "identifier": "opener:allow-open-path",
+      "allow": [
+        {
+          "path": "**"
+        }
+      ]
+    },
+    "dialog:default",
+    "store:default",
+    "fs:default",
+    "fs:allow-read-file",
+    "fs:allow-write-file",
+    "fs:allow-read-text-file",
+    "fs:allow-write-text-file",
+    "fs:allow-read-dir",
+    "fs:allow-stat",
+    "fs:allow-exists",
+    "fs:allow-mkdir",
+    "fs:allow-copy-file",
+    {
+      "identifier": "fs:scope",
+      "allow": [
+        {
+          "path": "**"
+        }
+      ]
+    },
+    {
+      "identifier": "http:default",
+      "allow": [
+        {
+          "url": "https://*"
+        },
+        {
+          "url": "http://*"
+        }
+      ]
+    },
+    "shell:allow-kill",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "binaries/ffmpeg",
+          "sidecar": true,
+          "args": true
+        },
+        {
+          "name": "yt-dlp-mac",
+          "cmd": "$APPDATA/yt-dlp/yt-dlp_macos",
+          "args": true
+        },
+        {
+          "name": "yt-dlp-win",
+          "cmd": "$APPDATA/yt-dlp/yt-dlp.exe",
+          "args": true
+        }
+      ]
+    },
+    {
+      "identifier": "shell:allow-spawn",
+      "allow": [
+        {
+          "name": "binaries/ffmpeg",
+          "sidecar": true,
+          "args": true
+        },
+        {
+          "name": "yt-dlp-mac",
+          "cmd": "$APPDATA/yt-dlp/yt-dlp_macos",
+          "args": true
+        },
+        {
+          "name": "yt-dlp-win",
+          "cmd": "$APPDATA/yt-dlp/yt-dlp.exe",
+          "args": true
+        }
+      ]
+    }
+  ]
+}

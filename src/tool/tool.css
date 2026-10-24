@@ -1,0 +1,35 @@
+/* 全网视频下载器：只用 kit.css 的变量。类名统一以 vd- 开头。 */
+.vd-root { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; }
+.vd-warn { display: flex; gap: 8px; align-items: flex-start; padding: 8px 12px; border-radius: var(--radius); background: var(--warn-soft); color: var(--warn); font-size: .92em; line-height: 1.5; }
+.vd-warn svg { flex: none; margin-top: 2px; }
+.vd-ok { display: inline-flex; align-items: center; gap: 4px; color: var(--ok); font-weight: 500; min-width: 0; }
+.vd-engine { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 12px 14px; }
+.vd-engine-main { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1 1 320px; }
+.vd-engine-main .k-muted { display: inline-flex; align-items: center; gap: 6px; line-height: 1.5; }
+.vd-engine-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.vd-engine-msg { flex-basis: 100%; }
+.vd-input { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.vd-input-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.vd-input-row { display: flex; gap: 8px; align-items: flex-start; }
+.vd-input-row .k-textarea { flex: 1; min-width: 0; resize: vertical; }
+.vd-one { flex: 1; min-width: 0; display: flex; align-items: center; }
+.vd-one svg { position: absolute; left: 10px; color: var(--muted); }
+.vd-one .k-input { padding-left: 32px; height: 34px; }
+.vd-notice { padding: 6px 12px; border-radius: var(--radius); background: var(--primary-soft); color: var(--primary); font-size: .92em; }
+.vd-list { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; }
+.vd-empty { padding: 28px 8px; text-align: center; }
+.vd-item { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding: 10px 14px; }
+.vd-item-main { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.vd-title { font-weight: 600; }
+.vd-sub { font-size: .86em; }
+.vd-state { display: flex; align-items: center; gap: 8px; font-size: .92em; margin-top: 2px; min-width: 0; line-height: 1.5; }
+.vd-item.error .vd-state { align-items: flex-start; }
+.vd-item-side { display: flex; align-items: center; gap: 8px; flex: none; }
+.vd-q { display: flex; align-items: center; gap: 6px; }
+.vd-q select { width: auto; min-width: 150px; }
+.vd-bar { flex: 0 0 180px; height: 6px; border-radius: 999px; background: var(--chip); overflow: hidden; }
+.vd-bar i { display: block; height: 100%; background: var(--primary); border-radius: 999px; transition: width .3s var(--ease); }
+.vd-foot { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding-top: 4px; }
+.vd-out { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 0 1 420px; }
+.vd-out .k-folder { flex: 1; min-width: 0; }
+.vd-sp { flex: 1; }
